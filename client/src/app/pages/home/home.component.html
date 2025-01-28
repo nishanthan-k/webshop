@@ -1,3 +1,5 @@
-<p>home works!</p>
-
-<p-button label="Hello"></p-button>
+<div class="column">
+  <div class="row wrap gap-2">
+    <app-product *ngFor="let product of products" [product]="product"></app-product>
+  </div>
+</div>

@@ -1,1 +1,19 @@
-<p>product works!</p>
+<div class="product column">
+  <img [src]=product.image alt="Product Thumbnail">
+  <h3 class="title">{{ product.name }}</h3>
+
+  <div class="row">
+    <span>Price: </span>
+    <span>{{ product.price }}</span>
+  </div>
+
+  <p-rating [(ngModel)]="product.rating" readonly="true" [stars]="5" />
+
+  <!-- <div class="row space-between actions">
+    <p-button label="Buy"></p-button>
+    <p-button label="Add to Cart"></p-button>
+  </div>
+  <button type="button" pButton icon="pi pi-pencil" label="Edit"></button>
+  <button type="button" pButton pRipple icon="pi pi-trash"  label="Delete" class="p-button-danger"
+    #deleteButton></button> -->
+</div>
